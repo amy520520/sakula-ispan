@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index-rwd</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        body{
+        font-family: 'Noto Sans TC', 'Rubik', sans-serif;
+        background: url(image/bgbg.png) no-repeat  0 0 fixed;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .container{
+            padding: 100px 0px;
+            width: 80%;
+        }
+
+        /* ----------------------header -------------------- */
+        nav{
+        background: #13131356;
+        width: 100%;
+        margin: auto;
+        position: fixed;
+        z-index:99;
+        }
+        .brand-logo img{
+        width: 35%;
+        }
+        .buger{
+            color: aliceblue;
+        }
+
+        /*newsales------------------------------------------------------------ */
+        .newsales{
+        background: url(image/bg-01.png) no-repeat 0px 0px  #7e6f7a9e;
+        background-size: cover;
+        }
+        .main-time{
+            display:flex;
+            flex-direction:row;
+            justify-content:right;
+            align-items:end;
+        }
+        
+        /* technology-----------------------------------------------------------*/
+        .technology{
+        /* background:linear-gradient(135deg, rgb(12 37 187) 50%, rgb(255 99 237 ) 100%) ; */
+        background:linear-gradient(135deg,rgb(12 37 187/90%) 50%,rgb(255 99 237/50% ) 100%)
+        }
+        .technology .contanier{
+            padding: 100px 20px;
+        }
+        /* marketing ---------------------------------------------------------- */
+        .marketing{
+        background:url(image/box.png) no-repeat -10px 30px #b6a3b1;
+        width: 100%;
+        }
+        .box{
+            width:100%;
+            background:linear-gradient(#fff,rgba(255, 255, 255, 0.162));
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+            align-items:center;
+            flex-wrap:wrap;
+            align-content: center;
+            padding: 20px 0;
+        }
+        .sbox{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+        /* five-big ----------------------------- */
+        .five-big{
+            background: url(https://edm.bnext.com.tw/martech-trends/assets/img/martech/line.svg)#e5d2ba no-repeat;
+        }
+        .keyw{
+            position:relative;
+            padding-left:56px;
+        }
+        .keyw h4{
+            position: absolute;
+            left:12px;
+            font-size: 36px;
+            font-weight: 900;
+        }
+        /* agenda----------------------------------*/
+        .agenda{
+            background: #e8e8aba9;
+        }
+        .event-time{
+            transform: translateY(30px);
+        }
+        .event-box{
+            box-shadow:-7.5px 7.5px 0px #000;
+            padding: 15px 10px 15px 10px;
+        }
+
+        /*activity---------------------------------     */
+        .activity{
+            background:#ddca77 ;
+        }
+        .my-card{
+            background: #f3f0f0;;
+            margin:20px 5px;
+        }
+        .m-info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items:center;
+            border-bottom: 1px solid#000;   
+        }
+        .hight-line{
+            background: #8ee693;           
+        }
+        .m-info{
+            padding: 10px;
+        }
+        .m-text{
+            padding: 10px;
+        }
+
+
+
+        @media screen and(max-width:300px){
+        .mycard{
+            width:100%;
+        }    
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="bg-dark">
+             <div class="container py-0">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <div class="brand-logo">
+                            <img src="image/BN.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto ms-auto d-none d-lg-block">
+                        <div class="menu">
+                            <a class="text-decoration-none text-white" href="#area1">關於高峰會</a>
+                            <a class="text-decoration-none text-white"href="#area2">活動介紹</a>
+                            <a class="text-decoration-none text-white" href="#area3">品牌合作</a>
+                            <a class="text-decoration-none text-white" href="#area4">報名資訊</a>
+                            <a class="text-decoration-none text-white btn btn-danger p-1 " href="">全數售馨</a>
+                        </div>                       
+                    </div>
+                    <div class="col-auto buger d-block-auto d-md-none ms-auto">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+             </div>
+        </nav>
+    </header>
+    <section class="newsales">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-xs-12">
+                    <div class="sub">
+                        <img src="image/sub-logo.svg" alt="行銷科技高峰會">
+                        <img src="image/main-topic.svg" alt="混血新行銷">
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 main-time">
+                        <img class="" src="image/main-time.svg" alt="台北國際會議中心">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="technology">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-xs-12">
+                    <div class="content text-white">
+                        <h4>「科技與人性完美結合的時代，就是運用行銷科技來提升整個顧客旅程的價值。」— 行銷5.0
+                        </h4>
+                        <p>你是精通數位的科技行銷人？還是善用右腦的創意行銷人？
+                            行銷的終極任務是感動消費者，科技用敏捷的速度，實現極致行銷的無窮想像！
+                            科技需要被善用，人性必須被解讀，行銷與科技不是一邊一國，而是品牌必須同時駕馭的混血新能力！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="marketing">
+        <div class="container">
+            <div class="t-main">
+                <h2>MarTech 行銷科技高峰會</h2>
+                <h3>About MarTech Summit</h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10">
+                    <p>
+                        《數位時代》跨越 21 世紀，參與科技發展與網路新經濟風起雲湧的每個關鍵年代。我們紀錄、解讀、探索正在發生與即將發生的數位變動；摸索下一步世界、認識下一步的領導者與觀念者，掌握下一波機會。
+                        <br>
+                        《行銷科技高峰會》帶領產業領航者、觀念先驅者，理解最前端的行銷技術、看見最實際的應用落實，從商務銷售、內容體驗、社群公關到廣告實務，駕馭科技，贏下時間，尋求持續成長的突破口；在技術百花齊放的今天，布局下一步的行動！
+                    </p>
+                </div>
+                <div class="boxx">
+                    <img src="" alt="">
+                </div>
+                
+            </div>
+            <div class="row pt-5" style="margin-left:-15px; margin-right: -15px;">
+                <div class="col-md-3 col-12">
+                    <div class="box">
+                        <div class="sbox">
+                            <h2>2025</h2><span>年</span>
+                        </div>
+                        <div class="s-sbox">
+                            <h4>未來行銷趨勢顯</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="box">
+                        <div class="sbox">
+                            <h2>5</h2>
+                            <span>大</span></div>
+                        <div class="s-sbox">
+                            <h4>趨勢議題探討</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="box">
+                        <div class="sbox"> 
+                            <h2>8</h2>
+                            <span> +位</span></div>
+                        <div class="s-sbox">
+                            <h4>國內外頂尖專家分享</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="box">
+                        <div class="sbox">
+                            <h2>1000</h2>
+                            <span>+位</span> 
+                        </div>
+                        <div class="s-sbox">
+                            <h4>領先品牌操盤者齊聚</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col">
+                    <button class="border-0 m-2">第一屈2019年</button>
+                    <button class="border-0 m-2">第二屈2020年</button>
+                    <button class="border-0 m-2">第三屈2021年</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="five-big">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-xs-12">
+                    <h2>
+                        五大關鍵，
+                        <br>
+                        科技實現行銷場景，讓品牌成就顧客渴望
+                    </h2>
+                </div>
+                <div class="col-md-7 cpl-xs-12">
+                    <div class="row">
+                        <div class="col-md-6 col-12 keyw">
+                            <h4>1</h4>
+                            <h2># 行銷趨勢</h2>
+                            <p>解密行銷科技，讓企業ROI成長最大化。</p>
+                        </div>
+                        <div class="col-md-6 col-12 keyw">
+                            <h4>2</h4>
+                            <h2># 數據整合</h2>
+                            <p>獲取更多第一方數據，發揮數據綜效。</p>
+                        </div>
+                        <div class="col-md-6 col-12 keyw">
+                            <h4>3</h4>
+                            <h2># 敏捷營運</h2>
+                            <p>養成混血人才，打造迅速應變的行銷科技團隊。</p>
+                        </div>
+                        <div class="col-md-6 col-12 keyw">
+                            <h4>4</h4>
+                            <h2># 科技賦能</h2>
+                            <p>突破框架思維，利用科技做對決策、點綴創意。</p>
+                        </div>
+                        <div class="col-md-6 col-12 keyw">
+                            <h4>5</h4>
+                            <h2># 顧客體驗</h2>
+                            <p>極致個人化行銷，提供更細緻的專屬服務。</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="special guest"></section>
+    <section class="agenda">
+        <div class="container">
+            <div>
+                <h2>精彩議程</h2>
+                <h3>Agenda</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h3 class="bg-black p-2 text-white">2025行銷趨勢</h3>
+                </div>
+                <div class="col-12">
+                    <h3 class="event-time w-25 bg-white p-1">
+                        <div>9:30-10:30</div>
+                    </h3>
+                    <div class="event-box d-flex align-items-center row bg-white p-3">
+                        <div class="col-md-6 col-xs-12">
+                            <h3 style="font-weight: 900;">
+                                <span style="background-color: rgb(97, 236, 236); font-size: 16px;" class="p-1">新趨勢</span>
+                                <br>
+                                混血式人才，塑造品牌未來
+                            </h3>
+                        </div>
+                        <div class="col-md-6 col-xs-12 d-flex">
+                            <div class="col-md-10 col-10">
+                                <h4>
+                                    電通台灣 顧客體驗管理事業群執行長暨美庫爾台灣執行長
+                                    <br>
+                                    蔡秀麗
+                                </h4>
+                            </div>
+                            <div class="col-md-2 col-2 d-flex align-items-center">
+                                <img src="image/spk-2.jpg" alt="lady speaker" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+            </div>
+        </div>
+    </section>
+    <section class="activity">
+        <div class="container">
+            <div>
+                <h2>活動資訊</h2>
+                <h3>Summit Information</h3>
+            </div>
+            <h5>日期：2022 / 12 / 14 (三)<span class="date-en">9:30-17:20</span></h5>
+            <h5>活動地點：台北國際會議中心（台北市信義區信義路五段1號）</h5>
+            <h5>票價資訊：</h5>
+            <div class="flex_box row">
+                <div class="card-a col-md-4 col-12">
+                    <div class="my-card ">
+                        <div class="hight-line ">
+                            <h4 class=" text-center">最多人選</h4>
+                        </div>
+                        <div class="m-info">
+                            <h4>早鳥優惠</h4>
+                            <h6>3,099</h6>
+                            <p>11/21-12/7</p>
+                            <a href="" class="btn btn-dark btn-primary">預約2023</a>
+                        </div>
+                        <p class="m-text">
+                            票券包含：
+                            <br>
+                            • 當日活動午餐、午茶
+                            <br>
+                            •《數位時代》雜誌3期 (隔月號起送)
+                        </p>                   
+                    </div>
+                </div>
+                <div class="card-a col-md-4 col-12">
+                    <div class="my-card ">
+                        <div class="hight-line">
+                            <h4 class=" text-center">最多人選</h4>
+                        </div>
+                        <div class="m-info">
+                            <h4>早鳥優惠</h4>
+                            <h6>3,099</h6>
+                            <p>11/21-12/7</p>
+                            <a href="" class="btn btn-dark btn-primary">預約2023</a>
+                        </div>
+                        <p class="m-text">
+                            票券包含：
+                            <br>
+                            • 當日活動午餐、午茶
+                            <br>
+                            •《數位時代》雜誌3期 (隔月號起送)
+                        </p>                   
+                    </div>
+                </div>
+                <div class="card-a col-md-4 col-12">
+                    <div class="my-card ">
+                        <div class="hight-line">
+                            <h4 class=" text-center">最多人選</h4>
+                        </div>
+                        <div class="m-info">
+                            <h4>早鳥優惠</h4>
+                            <h6>3,099</h6>
+                            <p>11/21-12/7</p>
+                            <a href="" class="btn btn-dark btn-primary">預約2023</a>
+                        </div>
+                        <p class="m-text">
+                            票券包含：
+                            <br>
+                            • 當日活動午餐、午茶
+                            <br>
+                            •《數位時代》雜誌3期 (隔月號起送)
+                        </p>                   
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="text-1">
+                <p>如需候補，請填寫「名額登記」表單</p>
+                <p>活動洽詢：yiya.wang@bnext.com.tw｜02-8773-9808 分機 275 王小姐；yijing.huang@bnext.com.tw｜02-8773-9808 分機 327 黃小姐</p>
+                <p>主辦單位保留議程與講師調整修改之權利；最新訊息請參考活動網頁。</p>
+                <p>客服專線：02-8771-6326 服務時間：週一至週五9:30-12:00；13:30-17:00</p>
+            </div>
+
+        </div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

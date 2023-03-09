@@ -1,0 +1,427 @@
+body{
+    font-family: 'Noto Sans TC', 'Rubik', sans-serif;
+    background: url(image/bgbg.png) no-repeat  0 0 fixed;
+}
+#wrap{
+    background: url(image/bgbg.png) repeat 0px 0px fixed ;
+    background-size: cover;   
+}
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+/* --------------------------header------------------- */
+header{
+    /* background: #131313d7; */
+    /* overflow: auto; */
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+}
+nav{
+    background: #131313d7;
+    width: 100%;
+    margin: auto;
+    height: 77px;
+    position: fixed;
+    z-index:99;
+}
+.brand-logo{
+    float: left;
+    padding-left: 50px;
+}
+.brand-logo img{
+    width: 35%;
+    padding-top: 20px;
+}
+.menu{
+    float: right;
+    font-size: 15px ;
+    line-height: 77px;
+    padding-right: 50px;
+}
+.menu a,.menu a:visited{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;    
+}
+.menu a:hover,.menu a:active{
+    color: rgb(186, 181, 181);
+}
+a.btn1,a.btn1:visited{    
+    padding:10px 25px ;
+    background-color:#e72ea3 ;
+    border-radius: 20px ;
+    color:rgb(250, 244, 244) ;
+}
+a.btn1:hover,a.btn1:active{
+    background:#b80e8a ;
+    color:#fff ;
+}
+/* newsales--------------------------------------- */
+.newsales{
+    background: url(image/bg-01.png) no-repeat 0px 0px  #7e6f7a9e;
+    background-size: cover;
+}
+.newsales .content{
+    position: relative;
+    z-index:1;
+    margin: auto;
+}
+.sub{
+    width: 40%;
+    padding: 100px 50px;
+}
+.main-time{
+    width: 20%;
+    /* padding: 50px 150px 100px 50px; */
+    position:absolute;
+    right: 50px;
+    bottom: 100px;
+    z-index:2;
+}
+/* ------------------------technology-------------------------------*/
+.technology{
+    /* background:linear-gradient(135deg, rgb(12 37 187) 50%, rgb(255 99 237 ) 100%) ; */
+    background:linear-gradient(135deg,rgb(12 37 187/90%) 50%,rgb(255 99 237/50% ) 100%)
+}
+.technology .content{
+    width: 80%;
+    margin: auto auto;  
+    height: 400px;
+    line-height: 1.8em;  
+    color: #eeecec;
+}
+.technology h4{
+    
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.8em;
+    padding: 60px 0;
+
+}
+.technology p{
+    text-align:justify ;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/* marketing------------------------------------------------------------ */
+.marketing{
+    background:url(image/box.png) no-repeat -10px 30px #b6a3b1;
+    width: 100%;
+}
+.marketing .content{
+    width: 80%;
+    margin: auto auto;
+    padding: 100px 0;
+    text-align: justify;
+    line-height: 3em;    
+}
+.artic{
+    margin: 50px 0;
+}
+
+.marketing h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+.marketing p{
+    text-align: justify;
+    font-size: 20px;
+}
+.allbox{
+    width:100%;
+    /* height: 500px; */
+    /* background: rgb(75, 71, 71); */
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:stretch;
+    flex-wrap:wrap;
+    margin: 50px 0;
+}
+.box{
+    width:20%;
+    background:linear-gradient(#fff,rgba(255, 255, 255, 0.162));
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap:wrap;
+    align-content: center;
+    padding: 25px 0;
+}
+.sbox{
+    /* height:100px; */
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:baseline;
+    flex-wrap:wrap;
+    padding:25px;    
+}
+.box h2{
+    font-size:48px;
+    font-weight: 900;
+}
+.box h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.boxline{
+     
+}
+.boxline a,a:visited {  
+    font-size: 16px; 
+    color: rgb(100, 88, 88);
+    text-decoration: none;
+    margin-right: 15px;
+    line-height: 77px;
+    /* padding-left: 100px;  */
+    background:#ece6e6;
+    /* background-clip: content-box;   */
+}
+.boxline a:hover{
+    background:#1a1919;
+    color: rgb(233, 227, 227);
+    /* background-clip: content-box;   */
+}
+/* -----------------------agenda------------------------------- */
+.agenda{
+    background: #e8e8aba9;
+    width: 100%;
+}
+.agenda .content{
+    border: 1px soild red;
+    padding: 80px 50px;
+    width: 70%;    
+    margin:auto auto;
+    
+}
+.agenda h1{
+    font-size: 32px;
+    font-weight: 900;    
+}
+.agenda h6{
+    font-size: 16px;
+    line-height: 2.5em;
+}
+.agenda h3{
+    font-size: 24px;
+    background: #0d0d0d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5px;
+}
+table{
+    line-height: 1.6em;
+    text-align:center; 
+}
+
+.agend tr {
+    font-size: 24px;
+}
+.time-caption{
+    width: 300px;
+}
+.concept{
+    width: 300px;
+    text-align: center;
+}    
+
+.speakerimg img{
+    width: 30%;
+    padding-top: 20px;
+    /* float: right; */
+    /* vertical-align: middle; 文字跟圖片基準線置中 */
+    vertical-align: middle; 
+}
+.agenda span{
+    font-size: 16px;
+    color: rgb(240, 235, 235);
+    background: #d75cb6;
+}
+.agenda td, .agend td{
+    border-bottom:1px solid rgb(25, 23, 23); 
+    padding:4px; 
+    text-align:center;
+    font-size: 20px; 
+}
+
+/* .agenda tr:nth-child(2n){background-color:yellow}  */
+
+.outbox{
+    background: rgba(219, 211, 211, 0.432);
+    padding: 30px;
+    border-radius: 10px;
+}
+/* --------------------------activity-------------------------- */
+.activity{
+    margin: 0 auto;
+    background: #d2c8c8b2;
+}
+.activity .content {
+    line-height: 2.4rem;
+}
+.activity .main {
+    margin: 0 auto;
+    padding: 100px 100px;    
+}
+.activity h1{
+    font-size: 32px;
+    font-weight: 900;    
+}
+.activity h2{
+    font-size: 16px;
+    line-height: 2.5em;
+}
+.activity p{
+    line-height: 1.6em;
+    text-align: justify;
+    font-size: 16px;
+}
+.flex-box{
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    /* background: #fff;; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:stretch;
+}
+.m-card{
+    width: 30%;
+    background: #fff;;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    align-content:stretch;    
+}
+.activity a{
+    text-decoration:none
+}
+.m-card h4{
+    font-weight: 600;
+}
+.activity span{
+    font-weight: 800;
+    font-size: 32px;
+}
+.m-info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid#000;   
+}
+.m-text p{
+    font-size:15px;
+    color: rgb(7, 7, 7);
+}    
+/* brand------------------------------------------------------------------------ */
+.brand{    
+    background: #f8f8f55b;
+}
+.brand.content {
+    line-height: 2.4rem;
+    width:80%;
+    margin:0px auto;
+    padding:80px 0;
+}
+.brand .main {
+    padding-bottom:50px;  
+}
+.brand h1{
+    font-size: 32px;
+    font-weight:900;    
+}
+.brand h2{
+    font-size: 16px;
+    line-height: 2.5em;
+}
+.brand p{
+    line-height: 1.6em;
+    text-align: justify;
+    font-size: 16px;
+}
+table { 
+    width:100%; 
+    border-collapse:collapse; 
+    /* border-collapse:collapse內框線黏起  */
+    margin:0 auto;
+    line-height: 3rem; 
+}
+.brand th, .brand td{
+    text-align:center;
+    padding:20px;
+    font-size: 20px;
+    font-weight: 800;
+} 
+.program-1{
+    background-color: #aeaeae;
+}
+.program-11{
+    background-color: #aeaeae58;
+}
+.program-2{
+    background-color: #d0b35c;
+}
+.program-22{
+    background-color: #d0b35cb1;
+}
+.program-3{
+    background-color: #e6e6e6;
+}
+.program-33{
+    background-color: #e6e6e68c;
+}
+tbody tr:nth-child(1){
+    border-bottom:1px solid rgba(159, 150, 150, 0.833); 
+}
+tbody tr:nth-child(2){
+    border-bottom:1px solid rgba(159, 150, 150, 0.833); 
+}
+.item{
+    text-align: left;
+}
+.item p, small{
+    font-size: 16px;
+    color: #635f5f;
+}
+.item h5, .program-11, .program-22, .program-33{
+    font-size: 20px;
+    font-weight:600;
+}
+.h55{
+    font-size: 32px;
+    font-weight:800;
+}
+.h55 h6{
+    font-size: 16px;
+    color: #635f5f;
+}
+
+/* footer -------------------------------------- */
+footer {
+    background: #000;
+    text-align:left ;
+    line-height: 3rem;
+    color: #fff;
+    padding: 20px 20px;
+}
+
+footer p{
+    font-size: 10px;
+}
+
+    
+
+
+
