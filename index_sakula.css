@@ -822,7 +822,7 @@ li img {
   }
 }
 
-/* section-8------------------- */
+/* section-8-聯絡我們------------------ */
 
 .section-8{
   position: relative;
@@ -955,6 +955,17 @@ li img {
   color: #5B6A5B ;
   margin-bottom:10px;
 }
+@media only screen and (max-width: 480px) { 
+  .login h2{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5B6A5B ;
+    margin-bottom:10px;
+  }
+}
 
 .login .inputBox{
   position: relative;
@@ -1086,14 +1097,19 @@ footer{
   display: flex;
   justify-content: center;
 }
-small{
+.small{
   color: #FFF;
   padding: 50PX 0;
   font-size: 14px;
 
 }
 @media only screen and (max-width: 480px) { 
-
+  .small{
+    color: #FFF;
+    padding: 50PX 0;
+    font-size: 8px;
+  
+  }
 }
 
 
